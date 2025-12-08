@@ -113,6 +113,7 @@ input {
 }
 #search:hover {
   background-color: rgb(63, 154, 63);
+  transform: translateY(-3px);
 }
 
 .photo-banner {
@@ -140,11 +141,6 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.addn-feature:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 2px 2px grey;
 }
 
 .addn-feature img {
@@ -202,4 +198,46 @@ input {
 #my:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+.addn-feature {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.addn-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px grey;
+}
+#dark-mode {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 23px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+body.dark-mode {
+  background: rgb(30, 30, 30);
+  color: white;
+}
+
+body.dark-mode header {
+  background: rgb(50, 50, 50);
+}
+
+body.dark-mode .addn-feature {
+  background: rgb(50, 50, 50);
+}
+
+body.dark-mode .bottom-content {
+  background: rgb(20, 20, 20);
+}
+
+body.dark-mode .main-content {
+  filter: brightness(0.7);
+}
+
+body.dark-mode label,
+body.dark-mode #main-heading {
+  color: rgb(240, 240, 240);
 }
