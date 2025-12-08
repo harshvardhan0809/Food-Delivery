@@ -241,3 +241,26 @@ body.dark-mode label,
 body.dark-mode #main-heading {
   color: rgb(240, 240, 240);
 }
+.restaurant-counter {
+  text-align: center;
+  position: relative;
+  top: 120px;
+  background: white;
+  padding: 15px 30px;
+  border-radius: 12px;
+  width: fit-content;
+  margin: 0 auto 20px auto;
+}
+
+#restaurant {
+  font-size: 36px;
+  color: red;
+  font-weight: bold;
+  margin: 0;
+}
+
+.restaurant-counter p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 5px;
+}

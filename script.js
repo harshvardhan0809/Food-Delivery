@@ -13,3 +13,14 @@ document.getElementById("dark-mode").addEventListener("click", () => {
   const btn = document.getElementById("dark-mode");
   btn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
 });
+let restaurantCount = 0;
+const targetCount = 500;
+
+const counterInterval = setInterval(() => {
+  restaurantCount += 5;
+  document.getElementById("restaurant").textContent = restaurantCount + "+ Restaurants";
+  
+  if (restaurantCount >= targetCount) {
+    clearInterval(counterInterval);
+  }
+}, 30);
